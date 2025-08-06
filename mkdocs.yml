@@ -1,0 +1,67 @@
+site_name: prisma-zod-mock
+site_description: Prismaスキーマから型安全なモックデータを生成するPrismaジェネレーター
+site_url: https://nurazon59.github.io/prisma-zod-mock-docs/
+repo_url: https://github.com/nurazon59/prisma-zod-mock
+repo_name: nurazon59/prisma-zod-mock
+
+theme:
+  name: material
+  language: ja
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: ダークモードに切り替え
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: ライトモードに切り替え
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.code.annotate
+
+nav:
+  - はじめに: README.md
+  - ガイド:
+    - インストール: installation.md
+    - 使い方: usage.md
+    - 設定: configuration.md
+    - アノテーション: annotations.md
+  - 例:
+    - 基本的な例: examples/basic.md
+    - 高度な例: examples/advanced.md
+  - FAQ: faq.md
+
+plugins:
+  - search:
+      lang: ja
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - admonition
+  - pymdownx.details
+  - pymdownx.tabbed:
+      alternate_style: true
+  - toc:
+      permalink: true
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/nurazon59/prisma-zod-mock
